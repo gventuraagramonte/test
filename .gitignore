@@ -1,4 +1,8 @@
-test1/__pycache__
+<<<<<<< HEAD
+=======
+
+>>>>>>> a71094fc4574caae1662626eb0c298533d34a441
+test1/__pycache__/
 __pycache__/
 test1/static
 .vscode/
@@ -6,3 +10,4 @@ venv/
 .venv/
 .env
 test1/__pycache__/
+venv/
