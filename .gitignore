@@ -6,3 +6,5 @@ test1/static
 venv/
 .venv/
 .env
+venv/
+.env/
