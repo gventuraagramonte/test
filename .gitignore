@@ -4,3 +4,4 @@ test1/__pycache__/
 venv/
 .vscode/
 posts/__pycache__/
+posts/migrations/__pycache__/
