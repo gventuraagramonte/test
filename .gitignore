@@ -5,3 +5,4 @@ venv/
 .vscode/
 posts/__pycache__/
 posts/migrations/__pycache__/
+posts/templates/__pycache__/
