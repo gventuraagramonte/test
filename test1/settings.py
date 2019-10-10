@@ -25,7 +25,7 @@ SECRET_KEY = 'aip+)_cp&gi3z%33-oyc&@9sf@g(3as^-2el&t2cx8^w$h=q_#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['3.82.171.228','127.0.0.1']
+ALLOWED_HOSTS = ['3.82.171.228','127.0.0.1','localhost']
 
 
 # Application definition
@@ -41,6 +41,10 @@ INSTALLED_APPS = [
 
     #Local apps
     'posts',
+    'users',
+    'portfolio',
+    'bootstrap4',
+    
 ]
 
 MIDDLEWARE = [
@@ -74,13 +78,17 @@ TEMPLATES = [
 WSGI_APPLICATION = 'test1.wsgi.application'
 
 
-# Database
+# Database de pruebas locales y de testing
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'yacachay',
+        'USER': 'yacachay_user',
+        'PASSWORD': 'Yacachay2019$',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
     }
 }
 
@@ -123,3 +131,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, "static/")
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'

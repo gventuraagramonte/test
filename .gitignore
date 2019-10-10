@@ -2,7 +2,16 @@ test1/__init__.pyc
 test/test1/__pycache__/
 test1/__pycache__/
 venv/
+venv/lib/python3.6/distutils/__pycache__/__init__.cpython-36.pyc
+venv/lib/python3.6/distutils/__pycache__/*.cpython-36.pyc
+venv/lib/python3.6/distutils/__pycache__/__init__.cpython-36.pyc
+venv/lib/python3.6/__pycache__/site.cpython-36.pyc
 .vscode/
 posts/__pycache__/
 posts/migrations/__pycache__/
 posts/templates/__pycache__/
+portfolio/__pycache__/
+portfolio/migrations/__pycache__/
+users/migrations/__pycache__/
+__pycache__/
+*.pyc
