@@ -1,52 +1,211 @@
+<!DOCTYPE html>
 <html>
-{% load bootstrap4 %}
+    <head>
+        {% load static %}
+        <title>Giorgio Ventura</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="{% static 'assets/css/main.css' %}" />
+        <noscript><link rel="stylesheet" href="{% static 'assets/css/noscript.css' %}" /></noscript>
+    </head>
+    <body class="is-preload landing">
+        <div id="page-wrapper">
+            <header id="header">
+                <h1 id="logo"><a href="index.html">Giorgio Ventura</a></h1>
+                <nav id="nav">
+                    <ul>
+                        <li><a href="#">About me</a></li>
+                        <li><a href="#">Skills</a></li>
+                        <li><a href="#">Work</a></li>
+                        <li><a href="#">Contact me</a></li>
+                    </ul>
+                </nav>
+            </header>
+            
+            <section id="banner">
+                <div class="content">
+                    <header>
+                        <h2>Lorem ipsum</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                           Temporibus excepturi sunt ut explicabo cupiditate,
+                           blanditiis id quas autem commodi sequi perferendis dolorum? 
+                           Dolores temporibus eveniet tenetur eos quae sequi ad?</p>
+                    </header>
+                    <span class="image"><img src="{% static 'images/pic01.jpg' %}" alt="" /></span>
+                </div>
+                <a href="#one" class="goto-next scrolly">Next</a>
+            </section>
 
-<head>
-    <title>Giorgio Ventura</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
-</head>
 
-<body>
-    <div class="jumbotron text-center bg-success text-white">
-        <h1>Giorgio Ventura</h1>
-        <h3><i>Developer</i></h3>
-    </div>
-    
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-3">
-                <h3>About me</h3>
-                <p>Lorem ipsum</p>
-            </div>
-            <div class="col-sm-3">
-                <h3>Skills</h3>
-                <p>Lorem ipsum</p>
-            </div>
-            <div class="col-sm-3">
-                <h3>Work</h3>
-                <p>Lorem ipsum</p>
-            </div>
-            <div class="col-sm-3">
-                <h3>Contact me</h3>
-                <p>Lorem ipsum</p>
-            </div>
+            <section id="one" class="spotlight style1 bottom">
+                <span class="image fit main"><img src="{% static 'images/pic01_.jpg' %}" alt=""></span>
+                <div class="content">
+                    <div class="row">
+                        <div class="col-4 col-12-medium">
+                            <header>
+                                <h2>Lorem Ipsum</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                   Temporibus excepturi sunt ut explicabo cupiditate,
+                                </p>
+                            </header>
+                        </div>
+                        <div class="col-4 col-12-medium">
+                            <header>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                   Temporibus excepturi sunt ut explicabo cupiditate,
+                                </p>
+                            </header>
+                        </div>
+                        <div class="col-4 col-12-medium">
+                            <header>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                   Temporibus excepturi sunt ut explicabo cupiditate,
+                                </p>
+                            </header>
+                        </div>
+                    </div>
+                </div>
+                <a href="#two" class="goto-next scrolly">Next</a>
+            </section>
+
+
+            <section id="two" class="spotlight style2 right">
+                <span class="image fit main"><img src="{% static 'images/pic04_.jpg' %}" alt=""></span>
+                <div class="content">
+                    <header>
+                        <h2>Lorem</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Temporibus excepturi sunt ut explicabo cupiditate,
+                        </p>
+                    </header>
+                    <p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi 
+                       praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis 
+                       porttitor lorem et accumsan consequat adipiscing lorem.
+                    </p>
+                    <ul class="actions">
+                        <li><a href="#" class="button">Learn More</a></li>
+                    </ul>
+                </div>
+                <a href="#three" class="goto-next scrolly">Next</a>
+            </section>
+
+
+            <section id="three" class="spotlight style3 left">
+                <span class="image fit main bottom"><img src="{% static 'images/pic05_.jpg' %}" alt="" /></span>
+                <div class="content">
+                    <header>
+                        <h2>Lorem Ipsum</h2>
+                        <p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor</p>
+                    </header>
+                    <p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi 
+                        praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis 
+                        porttitor lorem et accumsan consequat adipiscing lorem.
+                    </p>
+                    <ul class="actions">
+                        <li><a href="#" class="button">Learn More</a></li>
+                    </ul>
+                </div>
+                <a href="#four" class="goto-next scrolly">Next</a>
+            </section>
+
+
+            <section id="four" class="wrapper style1 special fade-up">
+                <div class="container">
+                    <header class="major">
+                        <h2>Accumsan sed tempus adipiscing blandit</h2>
+                        <p>Iaculis ac volutpat vis non enim gravida nisi faucibus posuere arcu consequat</p>
+                    </header>
+                    <div class="box alt">
+                        <div class="row gtr-uniform">
+                            
+                            <section class="col-4 col-6-medium col-12-xsmall">
+                                <span class="icon solid alt major fa-chart-area"></span>
+                                <h3>Ipsum sed commodo</h3>
+								<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. 
+                                   Blandit orci porttitor.
+                                </p>
+                            </section>
+                            
+                            <section class="col-4 col-6-medium col-12-xsmall">
+								<span class="icon solid alt major fa-comment"></span>
+								<h3>Eleifend lorem ornare</h3>
+								<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+                            </section>
+                            
+							<section class="col-4 col-6-medium col-12-xsmall">
+								<span class="icon solid alt major fa-flask"></span>
+								<h3>Cubilia cep lobortis</h3>
+								<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+                            </section>
+                            
+							<section class="col-4 col-6-medium col-12-xsmall">
+								<span class="icon solid alt major fa-paper-plane"></span>
+								<h3>Non semper interdum</h3>
+								<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+							</section>
+                            
+                            <section class="col-4 col-6-medium col-12-xsmall">
+								<span class="icon solid alt major fa-file"></span>
+								<h3>Odio laoreet accumsan</h3>
+								<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+							</section>
+                            
+                            <section class="col-4 col-6-medium col-12-xsmall">
+								<span class="icon solid alt major fa-lock"></span>
+								<h3>Massa arcu accumsan</h3>
+								<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+                            </section>
+                            
+                        </div>
+                    </div>
+                    <footer class="major">
+                        <ul class="actions special">
+                            <li><a href="#" class="button">Learn More</a></li>
+                        </ul>
+                    </footer>
+                </div>
+            </section>
+
+
+            <section id="five" class="wrapper style2 special fade">
+                <div class="container">
+                    <header>
+                        <h2>Magna faucibus lorem diam</h2>
+                        <p>Ante metus praesent faucibus ante integer id accumsan eleifend</p>
+                    </header>
+                    <form action="#" method="POST" class="cta">
+                        <div class="row gtr-uniform gtr-50">
+                            <div class="col-8 col-12-xsmall">
+                                <input type="email" name="email" id="email" placeholder="Your Email Address" />
+                            </div>
+                            <div class="col-4 col-12-xsmall">
+                                <input type="submit" value="Get Started" class="fit primary" />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+
+            <footer id="footer">
+                <ul class="icons">
+                    <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+                    <li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+                    <li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                    <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+                    <li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                    <li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+                </ul>
+            </footer>
+            
         </div>
-    </div>
-</body>
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
-<script>
-        mdc.textField.MDCTextField.attachTo(document.querySelector('.mdc-text-field'));
-</script>
+            <script src="{% static 'assets/js/jquery.min.js' %}"></script>
+			<script src="{% static 'assets/js/jquery.scrolly.min.js' %}"></script>
+			<script src="{% static 'assets/js/jquery.dropotron.min.js' %}"></script>
+			<script src="{% static 'assets/js/jquery.scrollex.min.js' %}"></script>
+			<script src="{% static 'assets/js/browser.min.js' %}"></script>
+			<script src="{% static 'assets/js/breakpoints.min.js' %}"></script>
+			<script src="{% static 'assets/js/util.js' %}"></script>
+			<script src="{% static 'assets/js/main.js' %}"></script>
+    </body>
 </html>
