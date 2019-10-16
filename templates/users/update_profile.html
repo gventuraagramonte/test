@@ -44,7 +44,7 @@
                         type="url"
                         name="website"
                         placeholder="Website"
-                        value="{% if form.errors %}{{ profile.website }}{% else %}{{ profile.website }}{% endif %}"
+                        value="{% if form.errors %}{{ form.website.value }}{% else %}{{ profile.website }}{% endif %}"
                     />
                     <div class="invalid-feedback">
                         {% for error in form.website.errors %}
@@ -53,20 +53,36 @@
                     </div>
                 </div>
 
+
+                {# biography field #}
                 <div class="form-group">
                     <label>Biography</label>
-                    <textarea class="form-control" name="biography">{{ profile.biography }}</textarea>
+                    <textarea 
+                        class="form-control {% if form.biography.errors %}is-invalid{% endif %}" 
+                        name="biography"
+                    >% if form.errors %}{{ form.biography.value }}{% else %}{{ profile.biography }}{% endif %}</textarea>
+                    <div class="invalid-feedback">
+                        {% for error in form.biography.errors %}
+                            {{ error }}
+                        {% endfor %}
+                    </div>
                 </div>
 
+                {# phone_number field #}
                 <div class="form-group">
                     <label>Phone number</label>
-                    <input
-                        class="form-control"
+                    <input 
+                        class="form-control {% if form.phone_number.errors %}is-invalid{% endif %}"
                         type="text"
                         name="phone_number"
                         placeholder="Phone number"
-                        value="{{ profile.phone_number }}"
+                        value="{% if form.errors %}{{ form.phone_number.value }}{% else %}{{ profile.phone_number }}{% endif %}"
                     />
+                    <div class="invalid-feedback">
+                        {% for error in form.phone_number.errors %}
+                            {{ error }}
+                        {% endfor %}
+                    </div>
                 </div>
 
                 <button type="submit" class="btn btn-primary btn-block mt-5">Update info</button>

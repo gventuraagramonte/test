@@ -5,22 +5,22 @@ from django.contrib.auth.models import User
 # Creamos el modelo a través de una estructura, esta la podemos visualizar
 # en la base de datos
 
-class User(models.Model):
-    """Modelo de usuarios"""
-    email = models.EmailField(unique=True)
-    password = models.CharField(max_length=100)
+# class User(models.Model):
+#     """Modelo de usuarios"""
+#     email = models.EmailField(unique=True)
+#     password = models.CharField(max_length=100)
 
-    first_name = models.CharField(max_length=100)
-    last_name = models.CharField(max_length=100)
+#     first_name = models.CharField(max_length=100)
+#     last_name = models.CharField(max_length=100)
 
-    is_admin = models.BooleanField(default=False)
+#     is_admin = models.BooleanField(default=False)
 
-    bio = models.TextField(blank=True)
+#     bio = models.TextField(blank=True)
 
-    birthdate = models.DateField(blank=True, null=True)
+#     birthdate = models.DateField(blank=True, null=True)
 
-    created = models.DateTimeField(auto_now_add=True)
-    modified = models.DateTimeField(auto_now=True)
+#     created = models.DateTimeField(auto_now_add=True)
+#     modified = models.DateTimeField(auto_now=True)
 
 
 class Post(models.Model):
